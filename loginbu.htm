@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+<title>Login</title><style type='text/css'>
+:focus {
+
+  background-color: yellow;
+}
+</style>
+</head>
+<body>
+<p>
+This is loginbu.htm from the docs subdirectory.  This file is sent if the
+username/password provided is not valid.
+</p>
+<hr>
+<p>
+That username or password was incorrect.  Please try again.
+</p>
+<form action='/login' method='post'>
+^F<input type='hidden' name='url' value='^U'>
+<div><label for='user'>Please enter your username:</label>     <input type='text'     name='user' id='user'></div>
+<div><label for='password'>Please enter your password:</label> <input type='password' name='pass' id='pass'></div>
+<input type='submit' value='Login'>
+</form>
+</body>
+</html>
